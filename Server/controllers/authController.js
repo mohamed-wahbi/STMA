@@ -63,8 +63,9 @@ module.exports.loginCtrl = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: 'Email or password is invalid' });
   }
 
+  //Creation du tok
   const token = jwt.sign(
-    { id: findEmailUser._id, isAdmin: findEmailUser.isAdmin, haveCampany: findEmailUser.haveCampany , isTechnicien:findEmailUser.isTechnicien },
+    { id: findEmailUser._id, isAdmin: findEmailUser.isAdmin , isTechnicien:findEmailUser.isTechnicien },
     'wahbiDevCode',
     { expiresIn: '1h' }
   );
@@ -75,22 +76,13 @@ module.exports.loginCtrl = asyncHandler(async (req, res) => {
     _id: findEmailUser._id,
     isAdmin: findEmailUser.isAdmin,
     profilePhoto: findEmailUser.profilePhoto,
-    haveCampany: findEmailUser.haveCampany,
-    isTechnicien:findEmailUser.isTechnicien,
     token
   });
 
 
 
-  const getUserEntreprise = await Entreprise.findOne({ adminEntreprise: findEmailUser._id });
-  if (!getUserEntreprise) {
-    return res.status(200).json({ message: "Utilisateur n'avez pas d'entreprise !" });
-  }
 
-  await Entreprise.findOneAndUpdate(
-    { adminEntreprise: findEmailUser._id },
-    { $set: { isConnected: true } }
-  );
+
   
 });
 
