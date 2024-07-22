@@ -38,5 +38,59 @@ module.exports.registerCtel = asyncHandler(async (req, res) => {
   res.status(201).json({ message: 'You registered successfully, please log in' });
 });
 
+/*--------------------------------------------------
+* @desc    Login new User
+* @router  /api/auth/login
+* @methode POST
+* @access  public
+----------------------------------------------------*/
+module.exports.loginCtrl = asyncHandler(async (req, res) => {
+  // Validation
+  const { error } = loginVerify(req.body);
+  if (error) {
+    return res.status(400).json({ message: error.details[0].message });
+  }
 
+  // Find user by email
+  const findEmailUser = await User.findOne({ email: req.body.email });
+  if (!findEmailUser) {
+    return res.status(400).json({ message: 'Email or password is invalid' });
+  }
+
+  // Password compare
+  const passwordCompare = await bcrypt.compare(req.body.password, findEmailUser.password);
+  if (!passwordCompare) {
+    return res.status(400).json({ message: 'Email or password is invalid' });
+  }
+
+  const token = jwt.sign(
+    { id: findEmailUser._id, isAdmin: findEmailUser.isAdmin, haveCampany: findEmailUser.haveCampany , isTechnicien:findEmailUser.isTechnicien },
+    'wahbiDevCode',
+    { expiresIn: '1h' }
+  );
+
+ 
+
+  res.status(200).json({
+    _id: findEmailUser._id,
+    isAdmin: findEmailUser.isAdmin,
+    profilePhoto: findEmailUser.profilePhoto,
+    haveCampany: findEmailUser.haveCampany,
+    isTechnicien:findEmailUser.isTechnicien,
+    token
+  });
+
+
+
+  const getUserEntreprise = await Entreprise.findOne({ adminEntreprise: findEmailUser._id });
+  if (!getUserEntreprise) {
+    return res.status(200).json({ message: "Utilisateur n'avez pas d'entreprise !" });
+  }
+
+  await Entreprise.findOneAndUpdate(
+    { adminEntreprise: findEmailUser._id },
+    { $set: { isConnected: true } }
+  );
+  
+});
 
