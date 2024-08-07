@@ -1,0 +1,114 @@
+.serviceComponent {
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+}
+
+.serviceComponent h3 {
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    color: #7a7a7a;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sarvicesTab {
+    background: #6d6363;;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+
+.headerTab td {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #3c2929;
+}
+
+.sarvicesTab td {
+    border: 1px solid black;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.btnControler  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.updateService {
+    background: #082b08;
+}
+
+.deleteService {
+    background: #390606;
+}
+
+.createServices {
+    width: 70%;
+    margin: auto;
+}
+
+.createServices form label {
+    color: #7a7a7a;
+}
+
+.createUpdateServiceBtn {
+    margin: 15px 0px 0px 0px;
+}
+
+/* Media Queries */
+@media (max-width :990px) {
+    .headerTab td {
+        font-size: 13px;
+        padding: 1px;
+    }
+    .btnControler {
+        flex-direction: column;
+    }
+
+    .btnControler button {
+        padding: 3px 3px;
+        margin: 1px 0px;
+    }
+    
+}
+
+@media(max-width:660px) {
+    .headerTab {
+        font-size: 12px;
+    }
+    .btnControler {
+        display: flex;
+        flex-direction: column;
+    }
+    .btnControler button {
+        padding: 3px 3px;
+        margin: 1px 0px;
+        font-size: 10px;
+    }
+    .sarvicesTab td {
+        font-size: 6px;
+    }
+
+    .serviceComponent h3 {
+        padding: 10px 0px;
+    }
+
+    .createUpdateServiceBtn button {
+        font-size: 7px;
+        border-radius: 2px;
+    }
+
+    .createServices form input {
+        height: 25px;
+    }
+
+    
+}

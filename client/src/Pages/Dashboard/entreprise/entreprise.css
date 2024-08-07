@@ -1,0 +1,174 @@
+/* Base styles */
+.EntrepriseClass {
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.entrepriseClassTitle {
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    color: #7a7a7a;
+    font-weight: bold;
+}
+
+.connectivitySituation {
+    background: #6d6363;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.connectivitySituation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.connectivitySituation li {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #505050;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.connectivitySituation li:hover {
+    background: #7a7a7a;
+}
+
+.connectedCompany,
+.notConnectedCompany {
+    padding: 20px;
+    background: #505050;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.connected {
+    font-size: 20px;
+    font-weight: bold;
+    background: #3db865;
+    width: 27px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.NotConnected {
+    font-size: 20px;
+    font-weight: bold;
+    background: #e15656;
+    width: 27px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.entrepriseInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background: #9488885c;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px -6px;
+    transition: 0.4s;
+}
+
+.entrepriseInfo:hover {
+    padding: 20px 0;
+}
+
+.bolvert {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #3db865;
+}
+
+.bolRouge {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #e15656;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+    .connectivitySituation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connectivitySituation li {
+        margin-bottom: 10px;
+    }
+
+    .connectivitySituation li:last-child {
+        margin-bottom: 0;
+    }
+
+    .connectedCompany,
+    .notConnectedCompany {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 660px) {
+    .entrepriseInfo {
+        display: inline-block;
+        padding-left: 10px;
+        position: relative;
+    }
+    .entrepriseInfo:hover {
+    padding-left: 10px;
+
+    }
+
+   
+    .EntrepriseClass {
+        padding: 10px;
+    }
+
+    .entrepriseClassTitle {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .connectivitySituation {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .connectedCompany,
+    .notConnectedCompany {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .connectivitySituation li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .bolvert {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .bolRouge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+
+}

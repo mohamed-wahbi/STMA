@@ -1,0 +1,37 @@
+.dashControle {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    color: #e7e7e7;
+    padding-top: 80px;
+    background: #242424;
+}
+
+.controleSectionDash {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 2px solid #232222;
+    margin-right: 15px; 
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+/* Media Queries */
+@media (max-width :990px) {
+    .dashControle {
+        justify-content: space-between;
+        display: flex;
+        justify-content: flex-end;
+      }
+}
+
+
+@media(max-width:520px) {
+    .controleSectionDash {
+        padding: 5px;
+        margin-top: 0px;
+    }
+    
+}
