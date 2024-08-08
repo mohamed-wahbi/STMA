@@ -1,0 +1,122 @@
+.textServisesComponent {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    margin-top: 26.4px;
+}
+
+.textServiceFormContent {
+    width: 100%;
+    background: #f9f9f9;
+    float: left;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 466.2px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.besoinTextHeader {
+    text-align: center;
+    background: #e4e4e4;
+    padding: 10px;
+}
+
+.besoinTextHeader b {
+    padding: 5px 0;
+}
+
+.besoinTextImg {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto;
+    box-shadow: 8px 10px 10px #919191;
+}
+
+.besoinImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesBesoin {
+    width: 100%;
+    background: #0d0fff0f;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.besoinImg img {
+    min-width: 80px;
+    max-width: 80px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .textServisesComponent {
+        width: 90%;
+    }
+
+    .textServiceFormContent {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .besoinTextHeader {
+        padding: 8px;
+    }
+
+    .besoinTextImg {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .imagesBesoin {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .besoinText h5,
+    .besoinImg h5 {
+        font-size: 18px;
+    }
+
+    .textServisesComponent h2 {
+        text-align: center;
+    }
+
+    .textServiceFormContent {
+        padding: 10px;
+    }
+
+    .besoinTextHeader {
+        padding: 5px;
+    }
+
+    .besoinTextImg {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .besoinImg img {
+        min-width: 60px;
+        max-width: 60px;
+    }
+
+    .imagesBesoin {
+        padding: 5px;
+    }
+}
