@@ -1,0 +1,55 @@
+.TechnicienPage {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+
+.mainTechnicien {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;}
+
+
+
+  .techMainContent {
+    flex: 1; /* Permet à cette section de grandir pour prendre tout l'espace disponible */
+    overflow-y: auto; /* Activer le défilement vertical */
+    padding: 10px; /* Optionnel : Ajouter du padding pour une meilleure lisibilité */
+    height: 100vh; /* S'assurer que la hauteur prend tout l'espace disponible */
+  }
+
+
+
+  /* Style de base du bouton */
+button.animated-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 15px;
+}
+
+/* Animation au survol */
+button.animated-button:hover {
+  animation: buttonHover 0.3s forwards;
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+    background-color: #3498db;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #2980b9;
+  }
+  100% {
+    transform: scale(1.05);
+    background-color: #3498db;
+  }
+}

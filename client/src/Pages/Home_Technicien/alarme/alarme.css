@@ -1,0 +1,39 @@
+.alarmeComponent {
+    width: 50%;
+    margin: 10px auto;
+    background: #b6c7aa33;
+    padding: 15px;
+    color: white;
+}
+
+.dateHeurActuel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke !important;
+}
+ .titreAlarm {
+    color: whitesmoke !important;
+}
+
+.dateForm {
+    padding: 15px;
+}
+
+.enregistreDateBtn {
+    margin-left: 15px;
+}
+
+.alarmeProgramer {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    background: #1e858280;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btnAlarm {
+    margin: 0px 5px;
+}

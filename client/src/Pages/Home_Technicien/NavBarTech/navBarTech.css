@@ -1,0 +1,77 @@
+.navBarTech {
+    font-size: 18px;
+    height: 60px;
+    border-bottom: 1px solid #868686;
+    background: #f0f0f0;
+    color: #666666;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nvbr1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.nvbr2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+
+}
+
+.nvbr2 .notification {
+    padding: 5px;
+    position: relative;
+}
+
+.nvbr2 .notification i  {
+    color: black;
+    font-size: 20px;
+}
+
+.nvbr2 .notification span {
+    position: absolute;
+    top: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #c62424;
+    background: #d7ffda;
+    padding: 1px;
+    border-radius: 28px;
+}
+
+.nvbr2 .custom-toggle::after {
+    display: none !important; /* Masque la flèche */
+  }
+
+.nvbr2 .custom-toggle {
+    background-color: transparent !important;
+    border: none;
+    padding: 0px 10px;
+}
+
+.nvbr1Img {
+    background-color: #7a8482;
+}
+.nvbr1Img img {
+    width: 53px;}
+
+.nvbr1Search input{
+    height: 55px;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.nvbr1Search {
+    width: 60%;
+}

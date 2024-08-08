@@ -1,0 +1,227 @@
+input[type=radio]{
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+}
+
+
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.cardEntreprise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceInfoComponent{
+    background: #af7f7f69;
+    position: absolute;
+    top: 45vh;
+    width: 80%;
+    margin: auto;
+    left: 10%;
+    padding: 50px;
+}
+
+/* General container styles */
+.serviceInfoTitre, .serviceInfoComponent, .equipeService {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Title section */
+.serviceInfoTitre h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+
+}
+
+.serviceInfoTitre b {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+/* Service info section */
+@keyframes marqueeUp {
+    0% {
+        top: 40%;
+    }
+    50%{
+        top: 35%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+
+.serviceInfoComponent {
+    background: #16a085bd;
+    position: absolute;
+    top: 52vh;
+    width: 80%;
+    margin: auto;
+    left: 10%;
+    padding: 50px;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: marqueeUp 5s linear infinite;
+
+}
+
+.serviceInfoTitre {
+    min-height: 65vh;
+    background: #484848;
+    padding-top: 120px;
+    margin: 0px;
+    background-image: url("../../assets/entrepriseImg.jpg");
+    background-blend-mode: multiply;
+}
+
+.serviceTitre {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.serviceTitre b {
+    color: whitesmoke;
+}
+
+.serviceTitre span {
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+.serviceDescription {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+
+/* Team section */
+.equipeService {
+    flex-direction: column;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 240px;
+    background: #324b4eed;
+    color: whitesmoke;
+    margin: 0px;
+    padding-top: 170px;
+}
+
+.equipeService h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+
+.aganceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.aganceCard:hover {
+    transform: scale(1.05);
+    background: #19706582;
+
+}
+
+.aganceCard img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.aganceCard h5 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.aganceCard i {
+    font-size: 1rem;
+}
+
+.aganceCard b {
+    font-size: 1.2rem;
+    color: #60d8c0;
+    margin-top: 10px;
+}
+
+/* Rating stars */
+.star {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .equipeService {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .serviceInfoTitre{
+        min-height: 80vh;
+        border-radius: 0px !important;
+    }
+
+    .equipeService {
+        padding-top: 320px;
+        border-radius: 0px !important;
+
+    }
+
+    .serviceInfoComponent {
+        top: 53vh !important;
+        max-height: 500px;
+    }
+
+}

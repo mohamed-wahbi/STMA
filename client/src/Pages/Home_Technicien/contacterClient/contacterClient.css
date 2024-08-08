@@ -1,0 +1,277 @@
+.headerContactClient {
+    background: #70786b;
+    padding: 15px;
+    background-image: url("../../../assets/telefon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.headerContactClientH3 {
+    color: whitesmoke;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+.headerContactClientP {
+    font-size: 18px;
+    padding-top: 15px;
+    font-weight: bold;
+    color: #A0937D;
+}
+
+.headerContactClient .infosClient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6e6cbc9;
+    width: 35%;
+    padding: 20px;
+    border-radius: 60px;
+    margin: auto;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+
+}
+
+.infosClient img {
+    border: 2px solid #86b1bda6;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #e6e1e1;
+    max-width: 40%;
+
+}
+
+.infosClient b {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #A0937D;
+}
+
+.infosClient span {
+    font-weight: 600;
+}
+
+
+/* --------------------BESOIN COMPONENT------------------------------ */
+.besoinComponent {
+    width: 100%;
+    height: 100vh;
+    background-color: #B6C7AA;
+    padding-bottom: 60px;
+
+}
+
+.besoinComponent1 {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.besoinComponent1Data {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.besoinComponent1Img {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.alarmBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff0000ad, #00800078, #0000ff9c, transparent);
+    color: whitesmoke;
+    text-transform: uppercase;
+    border: 1px solid;
+    transition: 0.4s;
+}
+
+.besoinComponent1Img img {
+    animation: rotation 4s infinite;
+    margin-bottom: 30px;
+
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+.besoinComponent h3 {
+    color: whitesmoke;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 15px 10px ; 
+    width: fit-content;
+    margin: auto;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.besoinComponent1Data .cardBesoin {
+    min-height: 25%;
+    width: 75%;
+    background-color: #e1e1e1;
+    margin: 15px;
+    border-bottom: 10px solid whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.besoinComponent1Img img {
+    width: 100%;
+    height: 80%;
+}
+
+.besoinComponent1Data .cardBesoin h4 {
+    text-align: center;
+    padding: 4px 0px;
+    background: #cadad3;
+    color: whitesmoke;
+    font-family: monospace;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    margin-bottom: 25px;
+}
+
+.besoinComponent1Data .cardBesoin .elementBesoin {
+    padding: 4px 0px ;
+}
+
+.imageBesoin {
+    background: #cfc4af;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 1px;
+}
+
+.imageBesoin img {
+  width: 70%;
+  height: 60px;
+  border-radius: 5px;
+  background: #dbdbdb;
+}
+
+
+/* ______________________________Alarm config____________________*/
+
+.configAlarm {
+    position: relative;
+    width: 100%;
+    /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+    background: #00000094;
+
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  
+  
+   
+  }
+  
+  .content h3 {
+    color: whitesmoke;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 15px 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    border-bottom: 2px solid whitesmoke;
+  }
+
+
+
+  .apelClComponent {
+    background: #588983ad;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 115px;
+  }
+
+  .apelClComponent .aLink {
+
+    background: #42673854;
+    padding: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.4s;
+  }
+
+  .apelClComponent .aLink:hover {
+    background: #1e2c1bc7;
+  }

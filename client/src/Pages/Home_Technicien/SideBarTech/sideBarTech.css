@@ -1,0 +1,74 @@
+.asideTechnicien {
+    background-image: url("../../../assets/technicien/asida.jpg");
+    height: 108vh;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -225px;
+    background-color: rgba(0, 0, 0, 0.534);
+    background-blend-mode: multiply;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.asideTechnicien .technicienLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.asideTechnicien .technicienLink .techLink {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    transition: 0.4s;
+    
+}
+
+.asideTechnicien .technicienLink .techLink:hover{
+    background: #485271cf;
+    
+}
+
+.asideTechnicien .technicienOption {
+    background: #0000008f;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 10px 39px;
+    border-radius: 3px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asideTechnicien .technicienOption p {
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.asideTechnicien .technicienOption:hover {
+    background: #485271cf;
+}
+
+.asideTechnicien .titleTech {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid whitesmoke;
+    font-family: fantasy;
+    letter-spacing: 10px;
+}

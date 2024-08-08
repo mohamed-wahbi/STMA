@@ -1,0 +1,420 @@
+/* Styles pour le header */
+.headerCompany {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.logo p {
+  margin: 0px;
+  padding-left: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: cursive;
+  color: #2a6195;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.companyLink ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.companyLink li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.companyLink li:last-child {
+  margin-right: 0;
+}
+
+.companyLink li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+
+.companyLink li a:hover {
+  color: #007bff;
+}
+
+/* Styles pour la section d'introduction de l'entreprise */
+.introCompany {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introCompany h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.introCompany b {
+  font-size: 16px;
+  color: #555555;
+}
+
+/* Styles pour la section des spécialités de l'entreprise */
+.specialiterCompany {
+  margin-top: 20px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.specialiterCompany h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #cccccc;
+}
+
+.accordion-header {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e9e9e9;
+}
+
+.accordion-body {
+  padding: 10px 20px;
+}
+
+/* Styles pour la section des réalisations (achevements) de l'entreprise */
+.achevementCompany {
+  margin-top: 20px;
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.achevementCompany h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 60%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+/* Styles pour la section d'envoi de message */
+.emailCompany {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 15px;
+}
+
+.emailCompany h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail div {
+  margin-bottom: 15px;
+}
+
+.mail label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mail input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+
+.mail button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mail button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour la section d'informations sur l'entreprise */
+.infoCompany {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6397cd2e;
+  color: white;
+  height: 50vh;
+}
+
+.companyInfo {
+  flex: 1 1;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  color: white !important;
+}
+
+.companyMap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyInfo b {
+  font-weight: bold;
+  font-size: 18px;
+  color: #47585e;
+}
+
+.companyInfo p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.locationEntreprise iframe {
+  height: 100%;
+  width: 800px;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .introCompany {
+    padding: 15px;
+  }
+
+  .specialiterCompany, .achevementCompany, .emailCompany {
+    width: 80%;
+  }
+
+  .infoCompany {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .locationEntreprise iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerCompany {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo p {
+    font-size: 24px;
+  }
+
+  .companyLink ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .introCompany h3 {
+    font-size: 20px;
+  }
+
+  .introCompany b {
+    font-size: 14px;
+  }
+
+  .specialiterCompany, .achevementCompany, .emailCompany {
+    width: 90%;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .mail input[type="text"] {
+    padding: 6px;
+  }
+
+  .mail button {
+    padding: 8px 16px;
+  }
+
+  .companyInfo {
+    padding: 15px;
+  }
+
+  .locationEntreprise iframe {
+    padding: 10px;
+  }
+
+  .card {
+    width: 13rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 20px;
+  }
+
+  .companyLink ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .companyLink li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .companyLink li:last-child {
+    margin-bottom: 0;
+  }
+
+  .introCompany h3 {
+    font-size: 18px;
+  }
+
+  .introCompany b {
+    font-size: 12px;
+  }
+
+  .specialiterCompany, .achevementCompany, .emailCompany {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .mail label {
+    font-size: 14px;
+  }
+
+  .mail input[type="text"] {
+    padding: 4px;
+  }
+
+  .mail button {
+    padding: 6px 12px;
+  }
+
+  .companyInfo b {
+    font-size: 16px;
+  }
+
+  .companyInfo p {
+    font-size: 14px;
+  }
+
+  .locationEntreprise iframe {
+    padding: 5px;
+  }
+
+  .headerCompany {
+    display: flex;
+    flex-direction: row;
+  }
+}
