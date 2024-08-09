@@ -1,0 +1,212 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.componentInfos {
+  background: #a39e9e82;
+  background-image: url('../../assets/entreprise/rencontre.jpg');
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 60vh;
+  background-size: cover;
+  background-position-y: -221px;
+  background-blend-mode: saturation;
+  color: white;
+}
+
+.headerEntreprise h2, .headerEntreprise p {
+  opacity: 0; /* Initial opacity to hide the title and paragraph */
+}
+
+.headerEntreprise h2 {
+  animation: fadeInTitle 1s ease-in-out forwards; /* Animation for the title */
+  color: #16a085c9;
+  font-size: 55px;
+  background: #6a6666ad;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 45px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px;
+}
+
+.headerEntreprise p {
+  animation: fadeInParagraph 1s ease-in-out forwards; /* Animation for the paragraph */
+  font-weight: bold;
+  padding: 15px;
+  font-size: 19px;
+}
+
+@keyframes fadeInTitle {
+  from {
+      opacity: 0; /* Start opacity */
+  }
+  to {
+      opacity: 1; /* End opacity */
+  }
+}
+
+@keyframes fadeInParagraph {
+  from {
+      opacity: 0; /* Start opacity */
+  }
+  to {
+      opacity: 1; /* End opacity */
+  }
+}
+
+.createEntrprise {
+  opacity: 1; /* Initial opacity to show the button */
+  font-weight: bold;
+  animation: blink 2s infinite; /* Continuous blinking animation */
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.75;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.registerInfos {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.registerInfos h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.registerEtap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.etape {
+  flex: 1 1 30%;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  text-align: center;
+  width: 100%;
+
+}
+
+.etape:hover {
+  background-color: #16a085;
+  color: white;
+}
+
+.etape h4 {
+  width: fit-content;
+  background: #a98b8b;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.etape b {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.etape img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.etape .bi-info-circle,
+.etape .bi-person-check,
+.etape .bi-activity {
+  text-align: center;
+  display: block;
+  font-size: 3pc;
+}
+
+.benefits-section {
+  background: #fff8f8;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.benefits-section h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .componentInfos {
+    background-repeat: initial;
+}
+
+  .headerEntreprise h2 {
+      font-size: 40px;
+      padding: 15px 30px;
+  }
+
+  .headerEntreprise p {
+      font-size: 16px;
+  }
+
+  .registerEtap {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .etape {
+      flex: 1 1 100%;
+      margin: 10px 0;
+  }
+
+  .benefits-section {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerEntreprise h2 {
+      font-size: 30px;
+      padding: 10px 20px;
+  }
+
+  .headerEntreprise p {
+      font-size: 14px;
+  }
+
+  .componentInfos {
+      background-repeat: initial;
+  }
+
+  .benefits-section {
+      width: 95%;
+  }
+}

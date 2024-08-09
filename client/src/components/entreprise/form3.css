@@ -1,0 +1,120 @@
+.f3Page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/entreprise/register.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #626262;
+  background-blend-mode: overlay;
+  padding: 20px 0;
+}
+
+.f3Page h2 {
+  padding: 55px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 80px auto !important; /* Ajustement pour petits écrans */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="file"],
+.form-container input[type="date"],
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.form-container {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+/* Media Queries */
+
+/* Petits écrans (téléphones en mode portrait) */
+@media (max-width: 600px) {
+  .f3Page {
+      padding: 20px;
+      flex-direction: column;
+      padding-top: 100px;
+      height: auto;
+  }
+  .form-container {
+      margin: 0 10px;
+      padding: 15px;
+  }
+  .f3Page h2 {
+      font-size: 1.5em;
+      padding: 20px;
+  }
+}
+
+/* Tablettes (mode portrait et paysage) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .f3Page {
+      padding: 40px;
+  }
+  .form-container {
+      margin: 0 20px;
+      padding: 20px;
+  }
+  .f3Page h2 {
+      font-size: 2em;
+      padding: 30px;
+  }
+}
+
+/* Ordinateurs de bureau et grands écrans */
+@media (min-width: 900px) {
+  .f3Page h2 {
+      font-size: 2.5em;
+      padding: 55px;
+  }
+  .form-container {
+      margin: 0 auto;
+      padding: 20px;
+  }
+}
