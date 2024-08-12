@@ -1,0 +1,49 @@
+/* diagrameStatistique.css */
+.diagrameStatistique {
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+
+}
+.chart-container {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  width: 45%;
+  margin: 10px;
+  width: 35%;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  
+}
+
+.chart {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation aux graphiques */
+.chart.animated {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,7 @@
+input[type=radion]{
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+}
